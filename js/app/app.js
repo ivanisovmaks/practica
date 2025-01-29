@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const main = {
         data() {
             return {
-                url:"https://affiliate.yanbasok.com",
+                url:"http://affiliate.yanbasok.com",
                 user: {name:"", phone:"", email:"", date:"", auth:""},
                 formData:{},
                 title:"",
