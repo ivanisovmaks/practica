@@ -28,26 +28,36 @@
 }
 
 .header {
+    /* width: 100%; */
+    /* background: #333; */
+    /* color: #fff; */
+    /* padding: 15px 20px; */
     width: 100%;
-    background: #333;
-    color: #fff;
-    padding: 15px 20px;
+    height: 9%;
+    color: #ffffff;
+    background-color: #393939;
 }
 
 .wrapper {
-    display: flex;
-    justify-content: space-between; /* Розташування елементів по краях */
-    align-items: center; /* Вирівнювання по центру */
+    /* display: flex; */
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
 
 .logo img {
-    max-width: 100%;
-    height: auto;
+    margin-right: 10px;
+    padding: 6px 0px;
+    object-fit: cover;
+    /* max-width: 100%; */
+    /* height: auto;*/
 }
 
 .al h1 {
     font-size: 1.5em;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .form .row {
@@ -69,6 +79,7 @@
 }
 
 .btn {
+    text-transform: uppercase;
     width: 100%;
     padding: 12px;
     background: #00c477;
@@ -163,4 +174,11 @@ form {
     90% { opacity:0.95;margin-left:-4%;} 
     95% { opacity:0.95;margin-left:-2%;} 
     100% { opacity:1;margin-left:0;}
+}
+
+.logo {
+    order: 2;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
