@@ -183,7 +183,7 @@ form {
     justify-content: flex-end;
 }
 
-#spiner{
+#spinner{
     background: #919fa640 url(../images/loader.gif) no-repeat; 
     background-position: center; 
     background-size: 50px; 
