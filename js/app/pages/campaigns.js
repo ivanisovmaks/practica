@@ -87,7 +87,7 @@ methods:{
 template: `
 <div class="inside-content">
     <Header ref="header" />
-    <div id="spinner" v-if="loader"></div>
+    <div id='spinner' v-if="loader"></div>
     <div class="wrapper">
         <div class="flex panel">
             <div class="w202 ptb30">
