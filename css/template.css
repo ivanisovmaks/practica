@@ -19,10 +19,19 @@
 #left-area {
     width: 40%;
     background: #f4f4f4;
+    /* display: flex; */
+    /* flex-direction: column;*/
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 20px; */
     height: 100vh;
 }
 
 .header {
+    /* width: 100%; */
+    /* background: #333; */
+    /* color: #fff; */
+    /* padding: 15px 20px; */
     width: 100%;
     height: 9%;
     color: #ffffff;
@@ -30,7 +39,9 @@
 }
 
 .wrapper {
+    /* display: flex; */
     justify-content: space-between;
+    /* align-items: center; */
     width: 100%;
     height: 100%;
     align-items: center;
@@ -40,6 +51,8 @@
     margin-right: 10px;
     padding: 6px 0px;
     object-fit: cover;
+    /* max-width: 100%; */
+    /* height: auto;*/
 }
 
 .al h1 {
@@ -169,3 +182,317 @@ form {
     display: flex;
     justify-content: flex-end;
 }
+
+#spiner{
+    background: #919fa640 url(../images/loader.gif) no-repeat; 
+    background-position: center; 
+    background-size: 50px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 9999999;
+}
+
+body {
+    background-color: #f3fafd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.inside-content {
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+    width: 100%; 
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex.panel {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+  }
+  
+.ptb20 {
+    padding: 20px 0;
+    text-align: right;
+}
+
+.ptb30 {
+    padding: 30px 0;
+    text-align: right;
+
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+input[type="date"] {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    /* border-width: 0.5px;
+    border-color: #c6d7e6; */
+    text-align: center;
+    border: 0.5px solid #ccc;
+  }
+
+.table {
+    overflow-x: auto;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    direction: rtl; /* Перевертає розташування таблиці */
+    border: 1px solid #ddd;
+}
+
+table a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+thead {
+    background-color: #f9f9f9;
+}
+
+
+th {
+    padding: 8px;
+    text-align: right;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+th.id, td.id {
+    width: 5%;
+}
+
+th.actions, td.actions {
+    width: 10%;
+}
+
+th {
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:first-child {
+    background-color: #f3f3f3
+  }
+  
+  tbody tr:last-child {
+    background-color: #f3f3f3
+  }
+
+.actions a {
+    margin: 0 5px;
+    color: #ff4d4f;
+}
+
+.actions a:hover {
+    color: #d9363e;
+}
+
+.fas.fa-trash-alt, .fas.fa-edit {
+    cursor: pointer;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 50px 0;
+    font-size: 18px;
+}
+
+/* Зміна кольору для виділеного рядка */
+tr:hover {
+    background-color: #f1f9ff;
+}
+
+th {
+    background-color: white;
+    font-weight: bold;
+}
+
+.id {
+    text-align: center;
+    width: 50px;
+}
+
+.actions {
+    text-align: center;
+    width: 100px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+.actions a:hover {
+    color: #007bff;
+}
+
+i.fas {
+    font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.popup-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    z-index: 999; /* Поверх всех элементов */
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff; /* Белый фон */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для объема */
+    z-index: 1000; /* Поверх фона */
+    /* padding: 20px; */
+    max-width: 90vw; /* Максимальная ширина окна (адаптивно для маленьких экранов) */
+    width: 500px; /* Стандартная ширина окна */
+    max-height: 80vh; /* Максимальная высота окна */
+    overflow-y: auto; /* Скролл, если контент превышает высоту окна */
+  }
+  
+  .flex1 {
+    display: flex; /* Flexbox для выравнивания */
+    justify-content: space-between; /* Распределение элементов по краям */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    flex-direction: row-reverse;
+  }
+  
+  .head-popup {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Распределение между элементами */
+    align-items: center; /* Выравнивание по вертикали */
+    width: 100%; /* Растянуть на всю ширину */
+    padding: 0px 20px; /* Внутренние отступы */
+    border-bottom: 1px solid #ddd; /* Линия снизу */
+    box-sizing: border-box; /* Учитывать padding в ширине */
+    background-color: #dfe3e9;
+    flex-direction: row-reverse;
+  }
+  
+  .head-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Темный текст */
+  }
+  
+  .w80 {
+    flex: 0 0 80%; /* Ширина 80% */
+  }
+  
+  .w202 {
+    flex: 0 0 19%; /* Ширина 20% */
+    text-align: right; /* Выравнивание по правому краю */
+    align-content: center;
+  }
+  
+  .ptb20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .al {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  a {
+    color: #888; /* Серый цвет ссылки */
+    text-decoration: none; /* Без подчеркивания */
+    font-size: 16px;
+  }
+  
+  /* a:hover {
+    color: #f00; 
+  } */
+  
+  .popup-inner {
+    width: 100%; /* Растянуть на всю ширину */
+    padding: 20px 20px; /* Внутренние отступы */
+    color: #555; /* Цвет текста контента */
+    font-size: 14px;
+    line-height: 1.6; /* Увеличенный межстрочный интервал */
+  }
+  
+  i:hover {
+    color: #01c477;
+    transition: all 0.2s;
+  }
+  
+  .botBtns {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  
+  .botBtns a {
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #00c477;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+  }
+  
+  .botBtns a:hover {
+    background-color: #158a7d;
+  }
+  
+  .fas.fa-info-circle {
+    padding-bottom: 25px;
+  }
+  
+  
