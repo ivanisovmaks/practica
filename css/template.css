@@ -180,8 +180,13 @@ padding: 5%;
     height: 83%;
 }
 
-form {
+.p20 form {
     width: 60%;
+    border-radius: 10px;
+}
+
+form {
+    width: 97%;
     border-radius: 10px;
 }
 
