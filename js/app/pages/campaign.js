@@ -148,7 +148,7 @@ export const campaign = {
                   // }
                 }
               }
-              // document.getElementById('chartOuter').innerHTML = '<div id="chartHints"><div class="chartHintsViews">Views</div><div class="chartHintsClicks">Clicks</div></div>'
+              document.getElementById('chartOuter').innerHTML = '<div id="chartHints"><div class="chartHintsViews">Views</div><div class="chartHintsClicks">Clicks</div><canvas id="myChart"></canvas></div>'
               const ctx = document.getElementById('myChart');
               const xScaleImage = {
                 id:"xScaleImage",
