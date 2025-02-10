@@ -101,7 +101,7 @@ export const user = {
                     self.$refs.header.$refs.msg.alertFun(response.data.error); 
                     return false; 
                 }else{ 
-                    //self.Srefs.payment.active=B; 
+                    //self.$refs.payment.active=0; 
                 } 
 
                 if(self.parent.formData.id){ 
@@ -162,7 +162,7 @@ export const user = {
             var data = self.parent.toFormData(self.parent.formData); 
 
             axios.post(this.parent.url+"/site/actionSite?auth="+this.parent.user.auth, data).then(function(response) { 
-                //self.Srefs.new.active=0; 
+                //self.$refs.new.active=0; 
                 if(self.parent.formData.id) { 
                     self.$refs.header.$refs.msg.successFun("Successfully updated site!"); 
                 }else{ 
@@ -220,7 +220,7 @@ export const user = {
                                 label: "Clicks",
                                 backgroundColor: "#00599D",
                                 borderColor: "#00599D",
-                                data: clicks
+                                data: clicks,
                             },
                             {
                                 label: "Views",

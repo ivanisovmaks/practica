@@ -55,7 +55,7 @@ export const users = {
                     console.log('errors: ', error);
                 });
             },
-            del:async function () { 
+            del:async function() { 
                 if(await this.$refs.header.$refs.msg.confirmFun("Please confirm next action", "Do you want to delete this user?")){ 
                     var self = this; 
                     var data = self.parent.toFormData(self.parent.formData);
@@ -164,7 +164,7 @@ export const users = {
                             </thead> 
                             <tbody> 
                                 <tr v-for="(item, i) in data.items"> 
-                                    <td class="id">{{item.d}}</td> 
+                                    <td class="id">{{item.id}}</td>
                                     <td class="id"> 
                                         <toogle :modelValue="item.published" @update:modelValue="item.published = $event;parent.formData = item;action()"/>
                                     </td> 
