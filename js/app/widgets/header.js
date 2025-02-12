@@ -35,6 +35,15 @@ export const header = {
                                 <li><router-link :class="{'router-link-active':$route.path.search('campaign')==1}" to="/campaigns"><i class="fas fa-bullhorn"></i> Campaigns</router-link></li>  
                                 <li><router-link :class="{'router-link-active':$route.path.search('user')==1}" to="/users"><i class="fas fa-users"></i> Users</router-link></li>
                             </ul> 
+
+
+                            <ul :class="{active:menu==1}" v-if="parent.user && parent.user.type && parent.user.type!='admin'"> 
+                                <li v-if="menu==1" class="al"><i class="fas fa-times" @click="menu=0"></i></li> 
+                                <li><router-link to="/statistics"><i class="fas fa-chart-area"></i> Statistics</router-link></li> 
+                                <li><router-link to="/ads"><i class="fas fa-image"></i> Ads</router-link></li> 
+                                <li><router-link to="/sites"><i class="fab fa-chrome"></i> Sites</router-link></li>
+                                <li><router-link to="/payments"><i class="fas fa-credit-card"></i> Payments</router-link></li>
+                            </ul>
                         </div> 
                     </div> 
                     <div class="w10 al" id="user-top" v-if="parent.user && parent.user.user"> 

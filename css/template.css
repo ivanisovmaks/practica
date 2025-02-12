@@ -948,3 +948,28 @@ input[type="text"]:focus {
     box-shadow: 0 0 10px rgba(33, 150, 243, 0.5); 
     outline: none; 
 }
+
+.table-sites th, 
+.table-sites td {
+    padding: 12px;
+}
+
+.table-sites td.text-center {
+    text-align: center;
+}
+
+.table-sites th.id,.table-sites td.id{
+    text-align: center;
+    width: 65px;
+}
+
+.table-sites td.image, 
+.table-sites th.image{
+    height: 35px;
+}
+
+
+.anothertable th, 
+.anothertable td {
+    padding: 12px;
+}
