@@ -661,6 +661,7 @@ tbody tr:nth-child(even) {
     position: relative;
     cursor: pointer;
     padding: 0px 63px 0 0px;
+    flex-direction: row-reverse;
 }
 
 #user-circle {
